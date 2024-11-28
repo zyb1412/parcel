@@ -15926,8 +15926,9 @@ var targetDate = new Date(date);
 // 更新页面上的时间信息
 function updateTime() {
   var now = new Date();
-  document.body.textContent = "".concat((0, _dateFns.formatDistanceToNow)(targetDate), " ago. \n    Now it's ").concat((0, _dateFns.format)(now, 'yyyy-MM-dd HH:mm:ss'));
+  document.body.textContent = "".concat((0, _dateFns.formatDistanceToNow)(targetDate), " ago. Now it's ").concat((0, _dateFns.format)(now, 'yyyy-MM-dd HH:mm:ss'));
 }
+
 // 初始时更新时间
 updateTime();
 
@@ -15958,7 +15959,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53151" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61789" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
