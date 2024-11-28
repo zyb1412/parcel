@@ -5,10 +5,10 @@ const targetDate = new Date(date);
 
 // 更新页面上的时间信息
 function updateTime() {
-    const now = new Date();
-    document.body.textContent = `${formatDistanceToNow(targetDate)} ago. 
-    Now it's ${format(now, 'yyyy-MM-dd HH:mm:ss')}`;
-  }
+  const now = new Date();
+  document.body.textContent = `${formatDistanceToNow(targetDate)} ago. Now it's ${format(now, 'yyyy-MM-dd HH:mm:ss')}`;
+}
+
 // 初始时更新时间
 updateTime();
 
